@@ -1,0 +1,88 @@
+#2001-blogFriends::-webkit-scrollbar {
+    width: 5px
+}
+
+#2001-blogFriends::-webkit-scrollbar-thumb {
+    background: #484848;
+    border-radius: 100px
+}
+
+#2001-blogFriends::-webkit-scrollbar-thumb:active {
+    background: #777
+}
+
+#2001-blogFriends {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 500px;
+    overflow: auto
+}
+
+.2001-blogFriends {
+    margin: 0;
+    padding: 0
+}
+
+.2001-blogFriends li {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 50%
+}
+
+.2001-blogFriends a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    margin: 0 8px 8px 0;
+    padding: 7px 15px;
+    font: 400 13px noto sans, sans-serif;
+    -webkit-transition: .3s;
+    letter-spacing: -.35px;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    color: inherit;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px
+}
+
+.2001-blogFriends a:hover {
+    border-color: var(--link-bg)
+}
+
+.2001-quydinhFriends {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    display: block;
+    float: left;
+    background-color: #f8f9fa;
+    font-size: 13px;
+    margin-top: -1px;
+    margin: 0 8px 8px 0;
+    padding: 7px 15px;
+    border-radius: 3px
+}
+
+.darkMode .2001-quydinhFriends {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    display: block;
+    float: left;
+    background-color: #484848;
+    font-size: 13px;
+    margin-top: -1px;
+    padding: 7px 15px;
+    margin: 0 8px 8px 0;
+    border-radius: 3px
+}
+
+.darkMode .2001-quydinhFriends a {
+    color: #fff
+}
