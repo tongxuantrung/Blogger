@@ -10,11 +10,6 @@ function changeColor(){
     // console.log(random);
 }
 
-function changeColor(){
-    const background = document.querySelector('.darkMode .header');
-    background.style.backgroundColor = var(--dark-bg);
-}
-
 function randomColor(array){
     return Math.floor(Math.random()*array.length);
 }
