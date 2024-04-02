@@ -8,6 +8,9 @@ function changeColor(){
     let random = arrayColor[randomColor(arrayColor)];
     background.style.backgroundColor = random;
     // console.log(random);
+
+    const background = document.querySelector('.darkMode header');
+    background.style.backgroundColor = var(--dark-bg);
 }
 function randomColor(array){
     return Math.floor(Math.random()*array.length);
