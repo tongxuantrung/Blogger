@@ -1,4 +1,4 @@
-<script>
+    <script>
   document.addEventListener('DOMContentLoaded', function() {
     // Lấy ngày hiện tại
     var today = new Date();
@@ -6,13 +6,15 @@
     var dayOfWeek = today.getDay();
 
     // Mảng các màu cho từng ngày trong tuần
-    var colors = ['#ffebee','#e0f2f1','#e2f1fc','#fff8e1','#eceff1','#fbe9e7', '#e8eaf6'];
+    var colors = ["#ffebee", "#e0f2f1", "#e2f1fc", "#fff8e1", "#eceff1", "#fbe9e7", "#e8eaf6"];
 
-    // Đối tượng body
-    var body = document.noti-ads;
+    // Lấy tất cả các phần tử có class "noti-ads"
+    var elements = document.querySelectorAll('.noti-ads');
 
-    // Đặt màu nền dựa trên ngày trong tuần
-    .noti-ads.style.backgroundColor = colors[dayOfWeek];
+    // Đặt màu nền dựa trên ngày trong tuần cho từng phần tử
+    elements.forEach(function(element, index) {
+      element.style.backgroundColor = colors[dayOfWeek];
+    });
 
     // Hiển thị ngày trong tuần
     var days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
