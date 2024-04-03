@@ -12,7 +12,7 @@
     var body = document.noti-ads;
 
     // Đặt màu nền dựa trên ngày trong tuần
-    body.style.backgroundColor = colors[dayOfWeek];
+    .noti-ads.style.backgroundColor = colors[dayOfWeek];
 
     // Hiển thị ngày trong tuần
     var days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
