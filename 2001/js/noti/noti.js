@@ -15,10 +15,4 @@
     elements.forEach(function(element, index) {
       element.style.backgroundColor = colors[dayOfWeek];
     });
-
-    // Hiển thị ngày trong tuần
-    var days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
-    var dayDisplay = document.getElementById('day-of-week');
-    dayDisplay.textContent = 'Hôm nay là ' + days[dayOfWeek];
-  });
 </script>
