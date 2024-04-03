@@ -11,6 +11,16 @@
     // Lấy tất cả các phần tử có class "noti-ads"
     var elements = document.querySelectorAll('.noti-ads');
 
+      // Hàm kiểm tra chế độ dark mode
+    function isDarkMode() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+       // Nếu đang trong dark mode, đặt màu nền trở lại mặc định
+      if (isDarkMode()) {
+        element.style.backgroundColor = '#383a3f';
+      }
+    });
+
     // Đặt màu nền dựa trên ngày trong tuần cho từng phần tử
     elements.forEach(function(element, index) {
       element.style.backgroundColor = colors[dayOfWeek];
