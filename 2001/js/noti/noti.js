@@ -15,4 +15,7 @@
     elements.forEach(function(element, index) {
       element.style.backgroundColor = colors[dayOfWeek];
     });
+      var days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+
+  });
 </script>
