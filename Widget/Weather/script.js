@@ -32,7 +32,7 @@
         // Hàm để lấy biểu tượng thời tiết từ Font Awesome tương ứng với trạng thái thời tiết
         function getWeatherIcon(description) {
             if (description.includes('rain')) {
-                return '<i class="fas fa-cloud-rain"></i>';
+                return 'https://tools.code.pro.vn/assets/images/weather/rain.svg';
             } else if (description.includes('cloud')) {
                 return '<i class="fas fa-cloud"></i>';
             } else {
