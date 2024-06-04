@@ -12,9 +12,9 @@
                         const description = data.weather[0].description;
                         const weatherIcon = getWeatherIcon(description);
                         document.getElementById('weather-icon').innerHTML = weatherIcon;
+                        document.getElementById('city').textContent = cityName;
                         document.getElementById('temperature').textContent = `${temp}°C`;
                         document.getElementById('description').textContent = description.charAt(0).toUpperCase() + description.slice(1);
-                        document.getElementById('city').textContent = cityName;
                     } else {
                         document.getElementById('temperature').textContent = 'Error retrieving weather data';
                         document.getElementById('description').textContent = 'Error retrieving weather data';
