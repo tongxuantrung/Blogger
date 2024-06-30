@@ -10,7 +10,7 @@
                         const cityName = data.name;
                         const temp = data.main.temp;
                         const description = data.weather[0].description;
-                        const weatherIcon = 'https://tongxuantrung.github.io/Blogger/SVG/weather.svg';
+                        const weatherIcon = getWeatherIcon(description);
 
                         document.getElementById('weather-icon').src = weatherIcon;
                         document.getElementById('city').textContent = cityName;
@@ -22,6 +22,15 @@
                     }
                 })
                 .catch(handleWeatherError);
+        }
+
+        function getWeatherIcon(description) {
+            // Kiểm tra mô tả thời tiết để chọn biểu tượng phù hợp
+            if (description.includes('rain')) {
+                return 'https://tongxuantrung.github.io/Blogger/SVG/rain.svg';
+            } else {
+                return 'https://tongxuantrung.github.io/Blogger/SVG/cloud.svg';
+            }
         }
 
         function animateTemperature(start, end) {
