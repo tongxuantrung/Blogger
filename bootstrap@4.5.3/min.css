@@ -322,7 +322,8 @@ hr {
 hr-bottom{
     margin-bottom:10px;
     border:0;
-    border-top:1px solid rgba(0,0,0,.1)}
+    border-top:1px solid rgba(0,0,0,.1)
+}
 .small,small {
     font-size:80%;
     font-weight:400
