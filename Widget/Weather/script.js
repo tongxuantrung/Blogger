@@ -33,7 +33,7 @@
                 const progress = Math.min(elapsedTime / duration, 1);
                 const currentTemp = Math.floor(start + (end - start) * progress);
 
-                document.getElementById('temperature').textContent = `${currentTemp}°C`;
+                document.getElementById('temperature').innerHTML = `${currentTemp}<sup>°C</sup>`;
 
                 if (progress < 1) {
                     requestAnimationFrame(updateTemperature);
