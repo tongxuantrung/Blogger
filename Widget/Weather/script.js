@@ -32,11 +32,11 @@
         // Hàm để lấy biểu tượng thời tiết từ Font Awesome tương ứng với trạng thái thời tiết
         function getWeatherIcon(description) {
             if (description.includes('rain')) {
-                return '<i class="fad fa-cloud-drizzle" style="--fa-primary-color: #c9e7fd; --fa-secondary-color: #4eb4fd; --fa-secondary-opacity: 1;"></i>';
+                return 'https://tongxuantrung.github.io/Blogger/SVG/weather.svg';
             } else if (description.includes('cloud')) {
-                return '<i class="fad fa-clouds" style="--fa-primary-color: #bdebff; --fa-secondary-color: #6da2fd; --fa-secondary-opacity: 1;"></i>';
+                return 'https://tongxuantrung.github.io/Blogger/SVG/weather.svg';
             } else {
-                return '<i class="fad fa-cloud-sun" style="--fa-primary-color: #a3d7f4; --fa-secondary-color: #ffe270; --fa-secondary-opacity: 1;"></i>';
+                return 'https://tongxuantrung.github.io/Blogger/SVG/weather.svg';
             }
         }
 
