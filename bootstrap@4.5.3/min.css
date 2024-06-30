@@ -423,7 +423,7 @@ pre code {
 }
 @media screen and (max-width: 576px){
   .mobile-key{display: grid;grid-template-columns: auto}
-  .img{ border-radius:50%;
+  .avatar-key{ border-radius:50%;
     height:180px;
     width:180px;
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
