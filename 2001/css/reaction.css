@@ -5,7 +5,7 @@
   .reaction-content{display:block;padding-top:5px;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
   .reaction.active .reaction-content{border-color:#f9d045}
   .reaction-content .reaction-icon{display:block;width:100%;height:auto;margin:auto;padding-right:20px;padding-left:20px;-webkit-transition:transform .3s cubic-bezier(.36,.8,.41,1);transition:transform .3s cubic-bezier(.36,.8,.41,1);-webkit-transform:scale(1) rotate(0deg);transform:scale(1) rotate(0deg);will-change:transform}
-  .reaction:hover .reaction-icon{-webkit-transform:scale(1.4) rotate(-20deg);transform:scale(1.4); animation: rung-lac 2s ease infinite;}
+  .reaction:hover .reaction-icon{-webkit-transform:scale(1.4);transform:scale(1.4); animation: rung-lac 2s ease infinite;}
   @-webkit-keyframes rung-lac {0% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
   10% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
   20% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
