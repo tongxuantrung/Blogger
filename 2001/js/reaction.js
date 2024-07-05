@@ -44,12 +44,12 @@
       }
 
       firebase.initializeApp(fbConfig),
-        reaction('love-action', 'Thích'),
-        reaction('sad-action', 'Yêu Thích'),
-        reaction('happy-action', 'Haha'),
-        reaction('sleepy-action', 'Wow'),
-        reaction('angry-action', 'Buồn'),
-        reaction('dead-action', 'Phẫn nộ');
+        reaction('like-action', 'Thích'),
+        reaction('love-action', 'Yêu Thích'),
+        reaction('haha-action', 'Haha'),
+        reaction('wow-action', 'Wow'),
+        reaction('sad-action', 'Buồn'),
+        reaction('angry-action', 'Phẫn nộ');
     });
   });
 /*]]>*/</script>
