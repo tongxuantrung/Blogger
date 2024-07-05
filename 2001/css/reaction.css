@@ -1,4 +1,4 @@
-  .reaction-section{position:relative;display:block;margin-top:40px;padding:30px 10px}
+  .reaction-section{position:relative;display:block;margin-top:40px;}
   .reaction-section-title{display:block;margin-bottom:25px;text-align:center}
   .rb-reaction{display:flex;flex-flow:row nowrap;justify-content:space-between;max-width:700px;margin-right:auto;margin-left:auto}
   .reaction{position:relative;flex:0 0 85px;max-width:70px;cursor:pointer}
