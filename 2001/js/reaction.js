@@ -1,4 +1,4 @@
-<script>/*<![CDATA[*/
+/*<![CDATA[*/
   var fbConfig = {
     databaseURL: "https://reaction-b8c02-default-rtdb.firebaseio.com/"
   };
@@ -52,4 +52,4 @@
         reaction('angry-action', 'Phẫn nộ');
     });
   });
-/*]]>*/</script>
+/*]]>*
