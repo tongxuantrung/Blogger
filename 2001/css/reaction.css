@@ -1,7 +1,7 @@
-  .reaction-section{position:relative;display:block;margin-top:40px;padding:30px 10px;border:1px solid #8882}
+  .reaction-section{position:relative;display:block;margin-top:40px;padding:30px 10px}
   .reaction-section-title{display:block;margin-bottom:25px;text-align:center}
   .rb-reaction{display:flex;flex-flow:row nowrap;justify-content:space-between;max-width:700px;margin-right:auto;margin-left:auto}
-  .reaction{position:relative;flex:0 0 85px;max-width:85px;cursor:pointer}
+  .reaction{position:relative;flex:0 0 85px;max-width:70px;cursor:pointer}
   .reaction-content{display:block;padding-top:5px;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
   .reaction.active .reaction-content{border-color:#f9d045}
   .reaction-content .reaction-icon{display:block;width:100%;height:auto;margin:auto;padding-right:20px;padding-left:20px;-webkit-transition:transform .3s cubic-bezier(.36,.8,.41,1);transition:transform .3s cubic-bezier(.36,.8,.41,1);-webkit-transform:scale(1) rotate(0deg);transform:scale(1) rotate(0deg);will-change:transform}
