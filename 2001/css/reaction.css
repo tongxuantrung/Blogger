@@ -4,6 +4,8 @@
   .reaction{position:relative;flex:0 0 85px;max-width:70px;cursor:pointer}
   .reaction-content{display:block;padding-top:5px;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
   .reaction.active .reaction-content{border-color:#f9d045}
+  .reaction-count{display:none}
+  .reaction.active .reaction-count{color:#f9d045;display:block}
   .reaction-content .reaction-icon{display:block;width:60px;height:auto;margin:auto;padding-right:10px;padding-left:10px;-webkit-transition:transform .3s cubic-bezier(.36,.8,.41,1);transition:transform .3s cubic-bezier(.36,.8,.41,1);-webkit-transform:scale(1) rotate(0deg);transform:scale(1) rotate(0deg);will-change:transform}
   .reaction:hover .reaction-icon{-webkit-transform:scale(1.4);transform:scale(1.4); }
   .reaction-content svg{max-width:100%;width:100%;height:auto}
