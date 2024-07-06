@@ -2,7 +2,7 @@
   .reaction-section-title{display:block;margin-bottom:25px;text-align:center}
   .rb-reaction{display:flex;flex-flow:row nowrap;justify-content:space-between;max-width:700px;margin-right:auto;margin-left:auto}
   .reaction{position:relative;flex:0 0 85px;max-width:70px;cursor:pointer}
-  .reaction-content{display:block;padding-top:5px;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
+  .reaction-content{display:block;padding-top:5px;text-align: center;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
   .reaction.active .reaction-content{border-color:#f9d045}
   .reaction-count{display:none}
   .reaction.active .reaction-count{color:#f9d045;display:inline}
