@@ -25,7 +25,7 @@
     .reaction{flex:0 0 70px;margin-top:5px}
     .reaction-content{padding-right:2px;padding-bottom:2px}
     .reaction-content .reaction-icon{width:40px;padding-right:2px;padding-left:2px}
-    .h6.reaction-title{display:none}
+    .h6.reaction-title{display:inline}
     span.total-wrap{font-size:11px;margin-top:5px}
   }
   @media only screen and (max-width: 767px) {
