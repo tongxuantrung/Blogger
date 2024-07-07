@@ -25,11 +25,13 @@
         }
 
         function getWeatherIcon(description) {
-            // Kiểm tra mô tả thời tiết để chọn biểu tượng phù hợp
+        // Kiểm tra mô tả thời tiết để chọn biểu tượng phù hợp
             if (description.includes('rain')) {
                 return 'https://tongxuantrung.github.io/Blogger/SVG/rain.svg';
-            } else {
+            } else if (description.includes('cloud')) {
                 return 'https://tongxuantrung.github.io/Blogger/SVG/cloud.svg';
+            } else if (description.includes('clear')) {
+                return 'https://tongxuantrung.github.io/Blogger/SVG/clear.svg';
             }
         }
 
