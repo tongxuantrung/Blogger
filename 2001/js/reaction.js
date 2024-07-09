@@ -23,7 +23,7 @@
           for (i = 0x0; i < j.length; i++) j[i] === id && (btn.classList.add(_action), btn.classList.add('active'))
         }
         firebase.database().ref(_action + '/' + id + '/total')['on']('value', function (e) {
-          e.val() < 0x0 && firebase['database']()['ref'](_action + '/' + id + '/total')['set'](Math.abs(e.val())), count = Math.abs(e.val()) || 0x0, btn.querySelector('.reaction-count').innerText = count
+          e.val() < 0x0 && firebase['database']()['ref'](_action + '/' + id + '/total')['set'](Math.abs(e.val())), count = Math.abs(e.val()) || 0x0, btn.querySelector('.reaction-count').innerText = count > 0 ? `( ${count} )` : ''
         }), btn['addEventListener']('click', function (t) {
           this.classList.add('loading'), setTimeout(() => {if (t.preventDefault(), this.classList.toggle(_action), this.classList.toggle('active'), this.classList.contains(_action)) {
             if (null === localStorage['getItem'](_action)) localStorage.setItem(_action, JSON.stringify([id]));
