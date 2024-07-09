@@ -8,8 +8,8 @@
   .reaction:hover .reaction-icon {-webkit-transform:scale(1.4);transform:scale(1.4); }
   .reaction:hover .reaction-nhan{pacity: 1;transition: all 0s;visibility: visible;}
   .reaction-nhan{background:rgba(0,0,0,0.7);border-radius:100px;color:#fff;font-size:10px;font-weight:700;left:50%;opacity:0;padding:2px 8px 4px;position:absolute;top:-25px;transform:translateX(-50%);visibility:hidden}
-  .reaction-nhan:hover{transform:scale(1.1);transition-duration:.05s;transition-property:transform;transition-timing-function:linear;
-  .reaction-nhan{opacity:1;transition:all 0;visibility:visible}}
+  .reaction-nhan:hover{transform:scale(1.1);transition-duration:.05s;transition-property:transform;transition-timing-function:linear;}
+  .reaction-nhan{opacity:1;transition:all 0;visibility:visible}
   .reaction-title.h6{font-size:13px;display:block;margin-top:5px;text-align:center;white-space:nowrap}
   .total-wrap{background: #a9a9a9;display: none;border-radius: 100%;color: #fff;line-height: normal;font-size: 60%;font-weight: 700;padding: 2px 6px;position: absolute;right: 3px;top: 7px;}
   .reaction.active .total-wrap{color:#fff;display:block}
