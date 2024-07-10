@@ -10,7 +10,7 @@
   .reaction:hover .reaction-nhan{display:block;opacity: 1;transition: all 0s;visibility: visible;transform:scale(1.1);transition-duration:.05s;transition-property:transform;transition-timing-function:linear;}
   .reaction-nhan {display:none;background:rgba(0,0,0,0.7);border-radius:100px;color:#fff;font-size:10px;font-weight:700;opacity:0;padding:4px;position:absolute;top:-25px;transform:translateX(-50%);visibility:hidden;line-height: normal;width: 100%;}
   .reaction-title.h6{font-size:13px;display:block;margin-top:5px;text-align:center;white-space:nowrap}
-  .total-wrap{background: #a9a9a9;display: none;border-radius: 100%;color: #fff;line-height: normal;font-size: 60%;font-weight: 700;padding: 2px 6px;position: absolute;right: 3px;top: 7px;}
+  .total-wrap{background: #a9a9a9;display: none;border-radius: 100%;color: #fff;line-height: normal;height: 16.96px;font-size: 60%;font-weight: 700;padding: 2px 6px;position: absolute;right: 3px;top: 7px;}
   .reaction.active .total-wrap{color:#fff;display:block;background:#f3797e}
   .reaction.active .reaction-title.h6 {font-weight:700;}
   .reaction:before{content:'';-webkit-transition:opacity .3s;transition:opacity .3s;pointer-events:none;opacity:0}
