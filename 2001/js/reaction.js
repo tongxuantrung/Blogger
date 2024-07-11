@@ -1,6 +1,5 @@
-/*<![CDATA[*/
-  var fbConfig = {
-    databaseURL: "https://reaction-b8c02-default-rtdb.firebaseio.com/"
+var fbConfig = {
+    databaseURL: "https://reaction-cmt-default-rtdb.firebaseio.com/"
   };
 
   var ls = (e, a) => {
@@ -23,7 +22,13 @@
           for (i = 0x0; i < j.length; i++) j[i] === id && (btn.classList.add(_action), btn.classList.add('active'))
         }
         firebase.database().ref(_action + '/' + id + '/total')['on']('value', function (e) {
-          e.val() < 0x0 && firebase['database']()['ref'](_action + '/' + id + '/total')['set'](Math.abs(e.val())), count = Math.abs(e.val()) || 0x0, btn.querySelector('.reaction-count').innerText = count > 0 ? `( ${count} )` : ''
+          e.val() < 0x0 && firebase['database']()['ref'](_action + '/' + id + '/total')['set'](Math.abs(e.val())), count = Math.abs(e.val()) || 0x0, btn.querySelector('.reaction-count').innerText = count > 0 ? `${count}` : '';
+          // Hiển thị hoặc ẩn .total-wrap dựa trên giá trị của count
+          if (count > 0) {
+            btn.querySelector('.total-wrap').style.display = 'block';
+          } else {
+            btn.querySelector('.total-wrap').style.display = 'none';
+          }
         }), btn['addEventListener']('click', function (t) {
           this.classList.add('loading'), setTimeout(() => {if (t.preventDefault(), this.classList.toggle(_action), this.classList.toggle('active'), this.classList.contains(_action)) {
             if (null === localStorage['getItem'](_action)) localStorage.setItem(_action, JSON.stringify([id]));
@@ -38,18 +43,24 @@
             for (var json = JSON.parse(localStorage[_action]), i = 0x0; i < json.length; i++) json[i] === id && json.splice(i, 0x1);
             localStorage['setItem'](_action, JSON.stringify(json)), count--
           }
-                                                           firebase.database().ref(_action + '/' + id + '/total').set(count), this.classList.remove('loading')}, 1000)
+            firebase.database().ref(_action + '/' + id + '/total').set(count), this.classList.remove('loading');
+            // Hiển thị hoặc ẩn .total-wrap sau khi cập nhật count
+            if (count > 0) {
+              btn.querySelector('.total-wrap').style.display = 'block';
+            } else {
+              btn.querySelector('.total-wrap').style.display = 'none';
+            }
+          }, 1000)
         })
 
       }
 
       firebase.initializeApp(fbConfig),
         reaction('like-action', 'Thích'),
-        reaction('love-action', 'Yêu Thích'),
+        reaction('love-action', 'Yêu'),
         reaction('haha-action', 'Haha'),
         reaction('wow-action', 'Wow'),
         reaction('sad-action', 'Buồn'),
-        reaction('angry-action', 'Phẫn nộ');
+        reaction('angry-action', 'Giận');
     });
   });
-/*]]>*
