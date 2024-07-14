@@ -1,0 +1,53 @@
+/* Comment Features Added By Camta */
+#cm-menu{position:relative;font-family:var(--font-body);font-size:14px;background:#fff;border-radius:4px;padding:20px 20px 85px;color:#333;margin: 0 0 20px -2px;line-height:1.5em;box-shadow:0 6px 18px 0 rgba(9,32,76,.075)}
+#cm-menu:before{content:'';display:block;border:11px solid;border-color:#fff transparent transparent transparent;position:absolute;bottom:-22px;left:31px}
+.bbcode a{color:var(--link-color)}
+.bbcode ul{border:1px solid #ededef;padding:10px;border-radius:4px;margin-top:20px;line-height:1.5em}
+.bbcode ul li{border-bottom:1px dashed #ededef;padding:10px 0;margin-bottom:0}
+.bbcode ul li:last-child{border-bottom:none}
+.bbcode ul li a{display:inline-block;color:var(--link-color);cursor:pointer}
+.bbcode ul li b.linkz{color:var(--link-color)}
+.cmbutton{display:grid;grid-template-columns:1fr 1fr;width:calc(100% - 40px);margin-top:25px;position:absolute;bottom:20px}
+.cmbutton1{border-bottom-left-radius:4px}
+.cmbutton2{border-bottom-right-radius:4px}
+.cmbutton-title{padding:10px;border-top:5px solid #e8e8e8;display:block;text-align:center}
+.cmbutton label{display:block;cursor:pointer}
+.cm-menus1:checked ~ .cmbutton .cmbutton1 .cmbutton-title, .cm-menus2:checked ~ .cmbutton .cmbutton2 .cmbutton-title{border-top:5px solid var(--link-bg)}
+.cm-menus1:checked ~ .bbcode{display:none}
+.cm-menus2:checked ~ .pesan-komen{display:none}
+.cm-menus1:checked ~ .cmbutton .cmbutton1, .cm-menus2:checked ~ .cmbutton .cmbutton2{background:rgba(23,191,99,.07)}
+
+/* Because in This Version 1.5 Yhere is No This Css So I Added it So That <i rel="code"></i>  Can Worked */
+.commentContent i[rel="code"]:before{content:'</>';position:absolute;right:0;top:0;color:var(--highlight-comment);font-size:10px;padding:0 10px;z-index:2;line-height:35px}
+.commentContent i[rel="code"]{display:block;white-space:pre; font-size:.8rem; position:relative;width:100%; border-radius:2px;background-color:var(--highlight-bg);color:var(--highlight-color); padding:20px;margin:25px auto; -moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;overflow:auto; font-family:var(--font-code);line-height:1.6em}
+.darkMode .commentContent i[rel="code"]{background-color:rgba(0,0,0,.09);color:var(--dark-textAlt)}
+.commentContent i[rel="code"]{margin:1.2em auto; font-style:normal}
+
+/* Comment Parse Tool Added By Camta */
+#parser{position:relative;margin-top:20px}
+#codes{border:1px solid #ededef;width:100%;height:150px;display:block;background-color:#fafafa;border-radius:4px;font:400 11px 'Fira Mono',monospace;resize:none;margin:0 0 10px;padding:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;box-shadow:none}
+#codes:active,#codes:focus{background-color:#f5f5f5;color:#444;outline:0}
+.btn-xs{font-family:var(--font-name);font-size:12px;line-height:1.5;border-radius:2px;padding:1px 5px;border:none;color:#fff;outline:0;cursor:pointer}
+.btn-primary{background-color:var(--link-color);margin-bottom: 10px;}
+.btn-primary:active, .btn-primary:hover, .parser:active, .parser:hover, .btn-primary:focus, .button-group button:disabled, .parser:focus{opacity:.9}
+.btn-danger{background-color:#7687b7}
+.btn-danger:active, .btn-danger:hover{opacity:.9}
+.btn-info{background-color:#c16c6c}
+.btn-info:active, .btn-info:hover{opacity:.9}
+.alert{padding:6px;border-radius:4px;position:absolute;top:10px;right:10px;min-width:100px}
+.alert span{font-size:12px}
+.alert-success{color:#3c763d;background-color:rgba(215,236,206,.58)}
+.closer{float:right;margin-top:3px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none;line-height:1}
+.checkbox{display:none}
+
+/* Dark Mode Css By Camta */
+.darkMode .cmbutton-title{border-top:5px solid #1f1f1f}
+.darkMode .cm-menus1:checked ~ .cmbutton .cmbutton1, .darkMode .cm-menus2:checked ~ .cmbutton .cmbutton2{background:rgba(0,0,0,.07)}
+.darkMode .post #codes{border:1px solid #3a3b3c;background-color:#1f1f1f}
+.darkMode .post #codes:active,.darkMode #codes:focus{background-color:#18191a;color:inherit;outline:0}
+.darkMode .post .alert-success{color:#989b9f;background-color:rgba(51,53,56,.60)}
+.darkMode .post .closer{color:#fff;text-shadow:0 1px 0 #fff}
+.darkMode #cm-menu{background:#242526;color:#c6c9ce;box-shadow:0 6px 18px 0 rgba(23,23,26,0.02)}
+.darkMode .bbcode ul,.darkMode .bbcode ul li{border-color:rgba(255,255,255,.1)}
+.darkMode #cm-menu:before{border-color:#292a2b transparent transparent transparent}
+.darkMode #codes,darkMode #codes:active,.darkMode #codes:focus{border:1px solid #3a3b3c;background-color:#1f1f1f;color:var(--dark-text)}
