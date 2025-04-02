@@ -58,6 +58,7 @@ var fbConfig = {
       firebase.initializeApp(fbConfig),
         reaction('like-action', 'Thích'),
         reaction('love-action', 'Yêu'),
+        reaction('care-action', 'Thương'),
         reaction('haha-action', 'Haha'),
         reaction('wow-action', 'Wow'),
         reaction('sad-action', 'Buồn'),
