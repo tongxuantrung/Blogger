@@ -18,10 +18,10 @@
   @keyframes reaction-spinner {
     to{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 800px) {
     .reaction-section{padding:20px 7px}
     .reaction-section-title{margin-bottom:10px}
-    .rb-reaction{flex-flow:row wrap;justify-content:space-around}
+    .rb-reaction{flex-wrap:wrap;justify-content:center}
     .reaction{flex:0 0 70px;margin-top:5px}
     .reaction-content{padding-right:2px;padding-bottom:2px}
     .reaction-content .reaction-icon{width:40px;padding-right:2px;padding-left:2px}
