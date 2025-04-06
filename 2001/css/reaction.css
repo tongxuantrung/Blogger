@@ -1,6 +1,6 @@
   .reaction-section{position:relative;display:block;}
   .reaction-section-title{display:block;margin-bottom:25px;text-align:center}
-  .rb-reaction{display:flex;flex-flow:row nowrap;justify-content:space-between;max-width:700px;margin-right:auto;margin-left:auto}
+  .rb-reaction{display:flex;flex-wrap: wrap;justify-content:center;max-width:700px;}
   .reaction{position:relative;flex:0 0 85px;max-width:70px;cursor:pointer}
   .reaction-content{display:block;padding-top:5px;text-align: center;padding-bottom:5px;-webkit-transition:all .3s cubic-bezier(.36,.8,.41,1);transition:all .3s cubic-bezier(.36,.8,.41,1);background-color:transparent}
   .reaction.active .reaction-content{border-color:#f9d045}
