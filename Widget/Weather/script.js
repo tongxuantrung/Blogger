@@ -1,6 +1,5 @@
         function getWeather() {
-            const apiKey = '3652719b430b5b7602ae27015fab39a5
-'; // Thay thế bằng API key của bạn
+            const apiKey = '3652719b430b5b7602ae27015fab39a5'; // Thay thế bằng API key của bạn
             const city = 'Hanoi, VN'; // Thành phố Hà Nội
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
